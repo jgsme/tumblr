@@ -1,0 +1,57 @@
+html, body
+  padding 0
+  margin 0
+
+body
+  background #451300
+  font-family serif
+  color #282828
+  width 100%
+  min-width 700px
+  letter-spacing -0.02em
+  line-height 1.4
+  font-size 18px
+
+  #container
+    background-color #f3f3f3
+
+  a
+    color #282828
+    &:hover
+      color #575757
+
+  blockquote
+    border-left #cbcbcb 5px solid
+    padding-left 1em
+
+  .date
+    padding-left 8%
+    font-family sans-serif
+    font-weight 700
+    font-size 1.6em
+    color #fff
+
+    a
+      text-decoration none
+      color #fff
+
+  .caption
+    width 82%
+    padding-left 8%
+    max-width 900px
+
+    img
+      width 100%
+      height auto
+
+  .post
+    margin-bottom 10em
+
+  .starcontainer
+    display inline
+
+@import 'header/*'
+@import 'posts/**/*'
+@import 'postnotes/*'
+@import 'pagination/*'
+@import 'footer/*'

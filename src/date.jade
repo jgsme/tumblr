@@ -1,0 +1,9 @@
+.date
+  | {block:Date}
+  a(href='{Permalink}')
+    | {Year}/{MonthNumberWithZero}/{DayOfMonthWithZero}
+    | {/block:Date}
+    | {block:NoteCount}
+    | - {NoteCountWithLabel}
+    | {/block:NoteCount}
+  .starcontainer

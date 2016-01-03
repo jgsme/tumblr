@@ -1,0 +1,16 @@
+{
+  "name": "diary",
+  "version": "0.0.0",
+  "description": "http://diary.jgs.me",
+  "main": "index.js",
+  "scripts": {
+    "build": "lsc scripts/build.ls"
+  },
+  "author": "jigsaw (http://jgs.me)",
+  "license": "MIT",
+  "devDependencies": {
+    "jade": "^1.11.0",
+    "livescript": "^1.4.0",
+    "stylus": "^0.53.0"
+  }
+}

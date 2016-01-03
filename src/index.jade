@@ -1,0 +1,61 @@
+doctype html
+html
+  head
+    link(href='{Favicon}', rel='shortcut icon')
+    title {Title}{block:SearchPage}: {lang:Search results for SearchQuery}{/block:SearchPage}{block:PostSummary}: {PostSummary}{/block:PostSummary}
+    style #{style}
+  body
+    #container
+      include ./header/template.jade
+      article
+        | {block:SearchPage}
+        include ./searchPage/template.jade
+        | {/block:SearchPage}
+
+        | {block:Posts}
+        |   {block:Link}
+        include ./posts/link/template.jade
+        |   {/block:Link}
+
+        |   {block:Answer}
+        include ./posts/answer/template.jade
+        |   {/block:Answer}
+
+        |   {block:Chat}
+        include ./posts/chat/template.jade
+        |   {/block:Chat}
+
+        |   {block:Video}
+        include ./posts/video/template.jade
+        |   {/block:Video}
+
+        |   {block:Audio}
+        include ./posts/audio/template.jade
+        |   {/block:Audio}
+
+        |   {block:Photo}
+        include ./posts/photo/template.jade
+        |   {/block:Photo}
+
+        |   {block:Photoset}
+        include ./posts/photoset/template.jade
+        |   {/block:Photoset}
+
+        |   {block:Quote}
+        include ./posts/quote/template.jade
+        |   {/block:Quote}
+
+        |   {block:Text}
+        include ./posts/text/template.jade
+        |   {/block:Text}
+
+        |   {block:PostNotes}
+        include ./postnotes/template.jade
+        |   {/block:PostNotes}
+        | {/block:Posts}
+      | {block:IndexPage}
+      |   {block:Pagination}
+      include ./pagination/template.jade
+      |   {/block:Pagination}
+      | {/block:IndexPage}
+      include ./footer/template.jade

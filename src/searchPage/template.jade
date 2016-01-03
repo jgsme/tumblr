@@ -1,0 +1,9 @@
+.search
+  p {lang:Search}
+  .contents
+    | {block:SearchResults}
+    |   {lang:SearchResultCount results for SearchQuery 2}.
+    | {/block:SearchResults}
+    | {block:NoSearchResults}
+    |   {lang:No search results for SearchQuery 2}.
+    | {/block:NoSearchResults}
