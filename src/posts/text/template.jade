@@ -1,10 +1,8 @@
 .post.text
-  include ../../date.jade
-
   .contents
     | {block:Title}
     h2.title
       a(href='{Permalink}') {Title}
     | {/block:Title}
+    include ../../date.jade
     .caption {Body}
-    .starcontainer

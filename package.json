@@ -1,8 +1,7 @@
 {
+  "private": true,
   "name": "diary",
-  "version": "0.0.0",
   "description": "http://diary.jgs.me",
-  "main": "index.js",
   "scripts": {
     "build": "lsc scripts/build.ls"
   },

@@ -1,6 +1,7 @@
 require! {
   fs: {read-file-sync}
   path: {resolve}
+  livescript: lsc
   stylus
   jade: {compile-file}
 }
@@ -17,6 +18,10 @@ err, css <- stylus do
 
 if err then return console.log err
 
+ls-entry = resolve source-dir, \./script.ls
+ls-str = read-file-sync ls-entry .to-string!
+script = lsc.compile ls-str
+
 jade-entry = resolve source-dir, \./index.jade
 
 compiler =
@@ -26,5 +31,6 @@ compiler =
 html =
   compiler do
     style: css
+    script: script
 
 console.log html

@@ -3,17 +3,24 @@ html, body
   margin 0
 
 body
-  background #451300
-  font-family serif
-  color #282828
-  width 100%
-  min-width 700px
   letter-spacing -0.02em
   line-height 1.4
   font-size 18px
 
+  #alert
+    p
+      text-align center
+
+  article
+    width 13000px
+
   #container
     background-color #f3f3f3
+    overflow scroll
+    display none
+
+    &::-webkit-scrollbar
+      display none
 
   a
     color #282828
@@ -27,31 +34,27 @@ body
   .date
     padding-left 8%
     font-family sans-serif
-    font-weight 700
-    font-size 1.6em
-    color #fff
-
-    a
-      text-decoration none
-      color #fff
+    font-size .6em
 
   .caption
     width 82%
     padding-left 8%
     max-width 900px
+    font-size .6em
 
     img
       width 100%
       height auto
 
   .post
-    margin-bottom 10em
+    margin-right 2em
+    float left
+    display inline-block
+    max-width 1280px
 
   .starcontainer
     display inline
 
-@import 'header/*'
 @import 'posts/**/*'
 @import 'postnotes/*'
 @import 'pagination/*'
-@import 'footer/*'

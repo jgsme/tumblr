@@ -1,9 +1,8 @@
 .post.photo
-  include ../../date.jade
-
   .contents
     .picture
       img(src='{PhotoURL-1280}', alt='{PhotoAlt}')
+    include ../../date.jade
     .caption
       | {block:Caption}
       |   {Caption}

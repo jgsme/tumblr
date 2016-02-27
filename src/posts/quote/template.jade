@@ -1,10 +1,8 @@
 .post.quote
-  include ../../date.jade
-
   .contents
     blockquote(class='length-{Length}') {Quote}
+    include ../../date.jade
     .caption
       | {block:Source}
       |   {Source}
       | {/block:Source}
-    .starcontainer

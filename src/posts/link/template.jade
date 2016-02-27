@@ -1,10 +1,8 @@
 .post.link
-  include ../../date.jade
-
   .contents
     h2.title
       a(href='{URL}') Link: {Name}
+    include ../../date.jade
     | {block:Description}
     .caption {Description}
     | {/block:Description}
-    .starcontainer

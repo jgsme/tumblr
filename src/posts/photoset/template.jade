@@ -1,11 +1,10 @@
 .post.photo
-  include ../../date.jade
-
   .contents
+    | {block:Photos}
     .picture
-      | {block:Photos}
       img(src='{PhotoURL-1280}', alt='{PhotoAlt}')
-      | {/block:Photos}
+    | {/block:Photos}
+    include ../../date.jade
     .caption
       | {block:Caption}
       |   {Caption}

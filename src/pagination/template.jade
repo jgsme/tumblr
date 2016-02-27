@@ -1,10 +1,11 @@
 .pagination
-  .next
-    | {block:NextPage}
-    a(href='{NextPage}') <<
-    | {/block:NextPage}
+  .container
+    .prev
+      | {block:PreviousPage}
+      a(href='{PreviousPage}#direct') <<
+      | {/block:PreviousPage}
 
-  .prev
-    | {block:PreviousPage}
-    a(href='{PreviousPage}') >>
-    | {/block:PreviousPage}
+    .next
+      | {block:NextPage}
+      a(href='{NextPage}#direct') >>
+      | {/block:NextPage}
